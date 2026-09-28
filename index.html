@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukra Store</title>
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; bg-color: #f3f4f6; color: #1f2937; background-color: #f4f5f7; }
+        
+        /* Navbar Styling */
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; height: 65px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 24px; font-weight: 700; color: #4f46e5; text-decoration: none; tracking-content: wide; }
+        .nav-menu { display: flex; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: #4b5563; font-weight: 600; font-size: 15px; transition: color 0.2s; }
+        .nav-menu a:hover { color: #4f46e5; }
+        .nav-menu a.active { color: #4f46e5; border-bottom: 2px solid #4f46e5; padding-bottom: 2px; }
+        .shop-btn { background-color: #4f46e5; color: white; border: none; padding: 8px 18px; font-weight: 600; font-size: 14px; rounded-radius: 6px; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .shop-btn:hover { background-color: #4338ca; }
+
+        /* Main Content */
+        main { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Hero Banner */
+        .hero { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); border-radius: 16px; color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 40px; }
+        .hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
+        .hero p { font-size: 16px; color: #e0e7ff; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+        /* Products Section */
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .section-header h2 { font-size: 22px; font-weight: 700; color: #1f2937; }
+        .view-all { font-size: 14px; font-weight: 600; color: #4f46e5; text-decoration: none; }
+        .view-all:hover { text-decoration: underline; }
+
+        /* Notice Box */
+        .alert-box { background-color: #eff6ff; border-left: 4px solid #3b82f6; padding: 20px; border-radius: 0 12px 12px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02); display: flex; gap: 15px; align-items: flex-start; }
+        .alert-icon { font-size: 24px; font-weight: bold; color: #3b82f6; line-height: 1; }
+        .alert-text { color: #1e3a8a; font-size: 15px; font-weight: 500; line-height: 1.6; }
+        .alert-text strong { color: #4f46e5; font-weight: 700; }
+
+        /* Footer */
+        footer { background-color: #ffffff; border-top: 1px solid #e5e7eb; padding: 20px 0; text-align: center; color: #6b7280; font-size: 14px; margin-top: 60px; }
+
+        /* Responsive Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; } /* Hide menu on mobile to keep it clean for now */
+            .hero h1 { font-size: 26px; }
+            .hero p { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Sukra Store</a>
+            <div class="nav-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">Gadgets</a>
+                <a href="#">Health & Beauty</a>
+                <a href="#">Home Appliances</a>
+            </div>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Welcome to Sukra Store</h1>
+            <p>স্মার্ট গ্যাজেট, হেলথ ও বিউটি এবং হোম অ্যাপ্লায়েন্সের সব সেরা কালেকশন এখন এক জায়গায়।</p>
+        </div>
+
+        <!-- Featured Products Section -->
+        <section>
+            <div class="section-header">
+                <h2>Our Featured Products</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <!-- Safe & Clean Info Box (No Broken SVG) -->
+            <div class="alert-box">
+                <div class="alert-icon">ℹ</div>
+                <div class="alert-text">
+                    আপনার ডিজাইনটি ঠিক হওয়ার পর, আমরা এখানে <strong>Square Online</strong> এর ফ্রি প্রোডাক্ট বাটন এবং স্লাইডারগুলো যুক্ত করব।
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Sukra Store. All rights reserved.
+    </footer>
+
+</body>
+</html>
